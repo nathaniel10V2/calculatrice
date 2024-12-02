@@ -1,0 +1,64 @@
+.calculatrice-app {
+	display: flex;
+	flex-direction: column;
+}
+
+.page-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	color: white;
+	font-weight: bold;
+	background-color:rgb(0, 128, 192);
+}
+
+mat-grid-tile.calculatrice-app {
+	
+	width:100%;
+	height: 100%;
+}
+
+mat-card {	
+	width:100%;
+	height: 100%;
+	background-color: white;
+}
+
+mat-card-actions {
+	display: flex;
+	justify-content: center;
+	align-items: center	
+}
+
+.calculatrice-list {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	overflow: auto;	
+}
+
+mat-list-option {
+	background-color: lightgrey;
+}
+
+mat-card-content.calculatrice-button-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+div.calculatrice-operation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	width: 100%;
+}
+
+button {
+	color: grey;
+}

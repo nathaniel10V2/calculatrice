@@ -1,0 +1,87 @@
+<div class="calculatrice-app">
+	<div class="page-header">
+		<h1>{{title}}</h1>
+	</div>
+	<mat-grid-list cols="1" rowheight="fit">
+		<!--mat-grid-tile class="calculatrice-app">
+			<mat-card>
+				<mat-card-actions>
+					<mat-selection-list class="calculatrice-list" #operation>
+						@for (item of operations; track item){
+							<mat-list-option>{{item}}</mat-list-option>
+						}
+					</mat-selection-list>					
+				</mat-card-actions>			
+			</mat-card>
+		</mat-grid-tile-->
+		<mat-grid-tile class="calculatrice-app">
+			<mat-card>				
+				<mat-card-content class="calculatrice-button-list">
+					<table>	
+						<tr align="center">
+							<td colspan="4">
+								<div class="calculatrice-operation">{{formuleAffichee}}</div>
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(7)">7</button>
+							</td>
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(8)">8</button>
+							</td>
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(9)">9</button>
+							</td>
+							<td>
+								<button mat-raised-button color="accent" (click)="enregistrerSaisie('/')" [disabled]="saisieOperandeEnCours()">/</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(4)">4</button>
+							</td>
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(5)">5</button>
+							</td>
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(6)">6</button>
+							</td>
+							<td>
+								<button mat-raised-button color="accent" (click)="enregistrerSaisie('x')" [disabled]="saisieOperandeEnCours()">x</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(1)">1</button>
+							</td>
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(2)">2</button>
+							</td>
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(3)">3</button>
+							</td>
+							<td>
+								<button mat-raised-button color="accent" (click)="enregistrerSaisie('-')" [disabled]="saisieOperandeEnCours()">-</button>
+							</td>
+						</tr>
+						<tr align="center">
+							<td>
+								<button mat-raised-button color="primary" (click)="enregistrerSaisie(0)">0</button>
+							</td>
+							<td>
+								<button mat-raised-button color="primary" (click)="supprimerFormule()">Eff</button>
+							</td>							
+							<td>
+								<button mat-raised-button color="primary" (click)="obtenirResultat()">=</button>
+							</td>
+							<td>
+								<button mat-raised-button color="accent" (click)="enregistrerSaisie('+')" [disabled]="saisieOperandeEnCours()">+</button>
+							</td>
+						</tr>	
+					</table>											
+				</mat-card-content>			
+			</mat-card>				
+		</mat-grid-tile>
+	</mat-grid-list>
+</div>
