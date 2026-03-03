@@ -1,27 +1,67 @@
-# Calculatrice
+🧮 Calculatrice Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+Une application de calculatrice développée avec Angular permettant d’effectuer des opérations mathématiques de base avec une interface simple et intuitive.
 
-## Development server
+✨ Fonctionnalités incluses
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+➕ 1. Opérations de base
 
-## Code scaffolding
+Addition
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Soustraction
 
-## Build
+Multiplication
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Division
 
-## Running unit tests
+🔢 2. Gestion des entrées
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Saisie des nombres via boutons
 
-## Running end-to-end tests
+Gestion des nombres décimaux
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Suppression du dernier caractère
 
-## Further help
+Réinitialisation complète
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+🧠 3. Logique de calcul
+
+Calcul en temps réel
+
+Gestion des erreurs (division par zéro)
+
+Affichage dynamique du résultat
+
+🎨 4. Interface utilisateur
+
+Design responsive
+
+Animations au clic
+
+Mise en page moderne
+
+🚀 Démarrer le projet
+📦 Prérequis
+
+Node.js & npm
+
+Angular CLI
+
+⚙️ Installation
+git clone https://github.com/nathaniel10V2/calculatrice.git
+cd calculatrice
+npm install
+ng serve
+
+Ouvre ensuite http://localhost:4200
+ dans ton navigateur.
+
+🛠️ Technologies utilisées
+
+Langage principal : TypeScript
+
+Framework : Angular
+
+Styling : SCSS
+
+Outils : Angular CLI, npm
